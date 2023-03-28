@@ -5,13 +5,32 @@
 #include <time.h>
 #include <cmath>
 #include <iomanip>
-
-
-int ball = 0;
-int* pbal = &ball;
-
-
 using namespace std;
+
+char name;
+int tpl = 0;
+int* tp = &tpl;
+int tpl2 = 5;
+int* tp2 = &tpl2;
+int tabelp[*tp][*tp2];
+
+
+int long = 6;
+int long2 = 1;
+int* t = &long;
+int* t2 = &long2;
+char tabel[][*t2][*t] {};
+
+int balm = 0;
+int* pbal = &ball;
+int* pbalm = &ball;
+int* pbalh = &ball;
+int* pball = &ball;
+int* pbals = &ball;
+int* pbalr = &ball;
+
+
+void endv();
 void end();
 void hisotry_1();
 void hisotry_2();
@@ -49,12 +68,20 @@ int main()
 {
 	srand(time(NULL));
 	setlocale(LC_ALL, "ru");
-
+	
+	
+	
+	
+	
 	start();
 	return 0; 
 }
 
 void start() {
+	
+	cout << "ведите ник без пробелов:\n";
+	cin >> name;
+	
 	cout << "Выберите категорию: \n1 - Музыка \n2 - Спорт \n3 - Религия \n4 - Живопись \n5 - История" << endl;
 	int a, b, c;
 	cin >> a;
@@ -78,7 +105,23 @@ void start() {
 	}
 
 }
-void end(){
+void endv(){
+cout << "1 - вернуться в меню\n2 - выключить программу\n";
+int a;
+	switch (a) {
+	case 1:
+		start;
+		break;
+	case 2:
+		break;
+
+}
+void tabel(){
+char name;
+cout << "ведите ник без пробелов:\n";
+
+}
+void bal(){
 	cout << "вы ответили верно на " << *pbal << " из 5\nваш бал по данной категорий: " << *pball;
 
 	*pbal = 0;
